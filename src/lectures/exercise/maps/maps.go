@@ -30,7 +30,7 @@ func serverStatusStats(serverMap map[string]int) map[int]int {
 	return serverStats
 }
 
-func serverStatusInfo(title string, serverMap map[string]int) {
+func printServerStatusInfo(title string, serverMap map[string]int) {
 	serverStats := serverStatusStats(serverMap)
 
 	fmt.Println()
@@ -38,11 +38,11 @@ func serverStatusInfo(title string, serverMap map[string]int) {
 	fmt.Println("Total number of servers is:", len(serverMap))
 	fmt.Println("Number of servers for Online", ":", serverStats[Online])
 	fmt.Println("Number of servers for Offline", ":", serverStats[Offline])
-	fmt.Println("Number of servers for retired", ":", serverStats[Retired])
+	fmt.Println("Number of servers for Retired", ":", serverStats[Retired])
 	fmt.Println("Number of servers for Maintenance", ":", serverStats[Maintenance])
 }
 
-func updateServer(serverStatusMap map[string]int, status int, server string) map[string]int {
+func updateServerStatus(serverStatusMap map[string]int, status int, server string) map[string]int {
 	serverStatusMap[server] = status
 	return serverStatusMap
 }
@@ -58,13 +58,13 @@ func main() {
 	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 
 	serverStatusMap := serversToMap(servers, Online)
-	serverStatusInfo("Server Info", serverStatusMap)
+	printServerStatusInfo("Server Info", serverStatusMap)
 
-	serverStatusMap = updateServer(serverStatusMap, Retired, "darkstar")
-	serverStatusMap = updateServer(serverStatusMap, Offline, "aiur")
-	serverStatusInfo("Server status updates", serverStatusMap)
+	serverStatusMap = updateServerStatus(serverStatusMap, Retired, "darkstar")
+	serverStatusMap = updateServerStatus(serverStatusMap, Offline, "aiur")
+	printServerStatusInfo("Server status updates", serverStatusMap)
 
 	serverStatusMap = serversToMap(servers, Maintenance)
-	serverStatusInfo("All servers on maintainance", serverStatusMap)
+	printServerStatusInfo("All servers on maintainance", serverStatusMap)
 
 }

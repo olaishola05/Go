@@ -31,9 +31,10 @@ const (
 func main() {
 	productSlice := []Product{
 		{"bags", Active},
-		{"shoe", Active},
-		{"shoe", Active},
-		{"shoe", Active},
+		{"cufflinks", Active},
+		{"belt", Active},
+		{"hoody", Active},
+		{"vans", Active},
 	}
 
 	fmt.Println("Initial Items", productSlice)

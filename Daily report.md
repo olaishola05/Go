@@ -103,3 +103,19 @@ Day 5 of #100DaysOfCode of learning Go programming.
 Working on a basic map with slices program, but the code is not working yet, Hopefully tomorrow I'll share. Below is a demo to a basic slice program.
     
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 6 of #100DaysOfCode of learning Go programming. 
+
+Don't do much learning today but complete a simple program I was working on yesterday to print server status using map and slices.
+    
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 7 of #100DaysOfCode of learning Go programming. 
+ I had a very low start today and other commitments but manage to squeeze in few minutes.
+
+ Learned
+ - Pointers
+ - Creating Pointers
+ - Few practice tackling challenge with pointers. I must confess, I still need another look at pointer to fully understand it.
+ 
+#100DaysOfCode #100DaysOfGo #golang

@@ -764,3 +764,27 @@ price, found := myMap["price"]
 for key, value := range myMap{
   // keys, values
 }
+
+## Pointers
+ - Pointers are variables that **point to** memory address
+ - The values of the variable itself is a memory address
+  - Accessing the data requires dereferencing the pointer
+  - Derefrence provide access to data that is been pointed to.
+
+### Creating Pointers
+
+  - When an Asterisk (*) is used with a type, it indicates the value is a pointer.
+
+  ```bash
+  value := 10
+  var valuePtr *int
+  valuePtr = &value
+  ```
+  - With an Ampersand(&) creates a pointer from a variable or when you want to create pointer from something that already exist.
+
+   ```bash
+  value := 10
+  valuePtr := &value
+  ```
+
+  When we are working with struct data type, we don't need to add the  asterisk to the variable or dereference the varaible because struct dot notation does that automatically

@@ -119,3 +119,8 @@ Day 7 of #100DaysOfCode of learning Go programming.
  - Few practice tackling challenge with pointers. I must confess, I still need another look at pointer to fully understand it.
  
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 8 of #100DaysOfCode of learning Go programming. 
+ Don't do any much learning today but practice all the concept learnt in a mini Library management program challenge. The program uses type aliases, Map, struct, pointers etc. Got stuck along the way but had to follow along to complete the program. Learnt alot with this challenge.
+ 
+#100DaysOfCode #100DaysOfGo #golang

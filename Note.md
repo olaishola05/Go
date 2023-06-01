@@ -818,6 +818,7 @@ This receiver func takes value as receiver and not a pointer. The value it take 
 ## iota
  - iota is used when working with constant variable
  - iota can be used to automatically assign integer values to const variables
+ - iota normally starts at zero
 
  ```bash
 
@@ -849,3 +850,72 @@ This receiver func takes value as receiver and not a pointer. The value it take 
  ```
 
  ### iota Enumeration pattern
+
+ ## Varadics
+ - When you are a writing a function with knowing the number of paramters it will take
+ - It is a way of making functions that accepts any number of params
+ - It is indicated using three dots and the paramter will be be slices
+
+ ```bash
+
+ func someFun(params ...int) type{
+    //do something with params slice
+ }
+
+```
+## Text Formating: FMT
+
+ - It provides terminal printing and string formatting
+ - Provides functions:
+  - Printf - custom format. Does not add new line
+    - uses verbs
+      - %v : default 
+      - %t : true/false
+      - %c: character or rune
+      - %X: Hex
+      - %U: Unicode format
+      - %e Scientific notation
+  - Print - Simple print
+  - Println - simple print with a newline
+ - F & S variants of the above funcs:
+  - F prints to a data stream to file: Fprintf, Fprint, Fprintln.
+  - S prints to a new string: Sprintf, Sprint, Sprintln
+
+### Escape Sequences
+ - It allow insertion of special characters in strings
+  - Backlash \\
+  - Single quote \'
+  - Double quote \"
+  - New Line \n
+  - \u or \U unicode(2byte & 4byte)
+  - \x Raw bytes(as hex digits)
+
+Example of printf
+
+```bash
+fmt.printf("Hello, World!\n")
+
+fmt.printf("%v, %v!\n", "Hello", "World")
+
+fmt.printf("This is a double \"Quote\"\n")
+```
+Example of Sprintf
+
+```bash
+func surround(msg string, left, right rune) string {
+  return fmt.Sprintf("%c%v%c", left, msg, right)
+}
+
+surrounded := surround("This is message", '(', ')')
+fmt.Println(surrounded)
+```
+
+## Packages
+
+ - Creating packages
+ - When you create packages, you need to create folder for each one of them.
+ - Main package is the one that launch the program
+ - When a package function is created using Capital letter, it is automatically exported and availabe to use on the main.
+ - Public & Private in Go is a matter of whether you capitalize a func or not. If capitalized it is public but if not it is private
+ - You can access the package created through the root module
+ - When working with package the directory if very important

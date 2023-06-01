@@ -788,3 +788,64 @@ for key, value := range myMap{
   ```
 
   When we are working with struct data type, we don't need to add the  asterisk to the variable or dereference the varaible because struct dot notation does that automatically
+
+  ## Receiver Functions
+  - They are a modified function signature which allow to perfom a dot notation on structures
+  - It allows simple mutation of existing structures, similar to modifying a class variable in other languages
+
+  Example of func receiver pointer
+
+  ```bash
+  type Coordinate struct {
+    X, Y int
+  }
+
+  func (coord *Coordinate) shiftBy(x, y int){
+    coord.X += 1
+    coord.Y += 1
+  }
+
+  coord := Coordinate{5, 5}
+  coord.shiftBy(1,1)
+
+  ```
+### Value Receiver Function
+
+This receiver func takes value as receiver and not a pointer. The value it take is a copy and any modification on the value does not modify the original value.
+- Value receivers can not modify a struct
+
+
+## iota
+ - iota is used when working with constant variable
+ - iota can be used to automatically assign integer values to const variables
+
+ ```bash
+
+ const (
+  online = iota
+  offline
+  maintenance
+  retired
+ )
+ ```
+
+ When used, the first variable will have 0 and it will automatically increment the rest of the const variable by one within the constant block
+
+ ### iota form
+
+ - long-form: you set every const to iota
+ - short-form: where you only set the first const variable
+
+ - You can skip variables by using underscore
+ - You can also start iota by positive number by adding the number to iota. You can also perform any math operations
+
+ ```bash
+
+ const (
+  i3 = iota + 3
+  i4 //4
+  i5 //5
+ )
+ ```
+
+ ### iota Enumeration pattern

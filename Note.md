@@ -919,3 +919,34 @@ fmt.Println(surrounded)
  - Public & Private in Go is a matter of whether you capitalize a func or not. If capitalized it is public but if not it is private
  - You can access the package created through the root module
  - When working with package the directory is very important
+
+
+ ## Init Function
+
+ - It perform initialisation
+  - init() run before the main() function
+  - It allow the creation and validation of program state before execution begins
+  - check network connections, database connections, cache, expensive operations, etc.
+  - Each package can have its own init function
+  - All package will execute init before main() runs
+  - it only runs once
+
+  ## Testing
+    - Unit testing: individual function
+    - Integration testing: test functions/modules working
+    - Go makes no distinction btw the two, it uses same process to create both.
+    - Tests are written in separate files, sharing the name of the file they are testing
+
+      - `importantPkg.go -> importantPkg_test.go`
+    - Unit test sholud be in the same package
+    - The testing package is used to create tests and must be imported in each test file
+### Test Setup
+ - Use underscore test and name of file to test
+ - The name start with Test and the function name to test
+
+  `func TestIsValidEmail`
+  - The func argument has to be a pointer to `testing.T` package
+  - To run a test simply put go test
+
+### Test Tables
+  - For testing multiple pieces of data

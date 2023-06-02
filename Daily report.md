@@ -150,3 +150,14 @@ Day 10 of #100DaysOfCode of learning Go programming.
   - Public & Private package
  Practice creating packages and code a basic calculator using iota.
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 11 of #100DaysOfCode of learning Go programming. 
+ Learned
+ - Init Function
+ - Basic testing in Go
+  - Unit test & Integration testing
+  - Test setup
+  - Testing multiple data with table
+  No much much practice today, had so much meetings & sync, will continue with unit & integration testing.
+#100DaysOfCode #100DaysOfGo #golang

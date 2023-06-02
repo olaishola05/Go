@@ -136,3 +136,17 @@ Day 9 of #100DaysOfCode of learning Go programming.
 - iota Enumeration & pattern
  
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 10 of #100DaysOfCode of learning Go programming. 
+ Learned
+ - Varadics
+ - Text Formating: FMT
+  - Printf
+  - Println etc.
+  - Escape Sequences
+ - Packages
+  - Creating packages
+  - Public & Private package
+ Practice creating packages and code a basic calculator using iota.
+#100DaysOfCode #100DaysOfGo #golang

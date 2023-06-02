@@ -31,14 +31,14 @@ func (op Operation) calculate(operation Operands) uint {
 
 func main() {
 	add := Operation(Add)
-	fmt.Println(add.calculate(Operands{2, 2})) // = 4
+	fmt.Println(add.calculate(Operands{2, 2}))
 
 	sub := Operation(Subtract)
-	fmt.Println(sub.calculate(Operands{10, 3})) // = 7
+	fmt.Println(sub.calculate(Operands{10, 3}))
 
 	mul := Operation(Multiply)
-	fmt.Println(mul.calculate(Operands{3, 3})) // = 9
+	fmt.Println(mul.calculate(Operands{3, 3}))
 
 	div := Operation(Divide)
-	fmt.Println(div.calculate(Operands{150, 2})) // = 50
+	fmt.Println(div.calculate(Operands{150, 2}))
 }

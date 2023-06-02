@@ -918,4 +918,4 @@ fmt.Println(surrounded)
  - When a package function is created using Capital letter, it is automatically exported and availabe to use on the main.
  - Public & Private in Go is a matter of whether you capitalize a func or not. If capitalized it is public but if not it is private
  - You can access the package created through the root module
- - When working with package the directory if very important
+ - When working with package the directory is very important

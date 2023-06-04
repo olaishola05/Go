@@ -161,3 +161,21 @@ Day 11 of #100DaysOfCode of learning Go programming.
   - Testing multiple data with table
   No much much practice today, had so much meetings & sync, will continue with unit & integration testing.
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 12 of #100DaysOfCode of learning Go programming. 
+ Learned
+  - Continued with unit testing in Go
+  Write unit tests for previously created receiver funtions for player stats to make sure
+    - Health & energy can not go above their maximums
+    - Health & energy can not go below 0
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 13 of #100DaysOfCode of learning Go programming. 
+  - Continued with unit testing in Go
+  Write unit test for previously created basic calculator program to test
+    - arithmetic operations on all mathematical operations
+    - Test if returned answer equal expected
+
+#100DaysOfCode #100DaysOfGo #golang

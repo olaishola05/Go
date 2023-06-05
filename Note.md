@@ -950,3 +950,83 @@ fmt.Println(surrounded)
 
 ### Test Tables
   - For testing multiple pieces of data
+
+## Interface
+  - Interface allow specifying behaviors of a type instead of the type itself
+  - It allows functions to operate on more than one type of data unlike we used to specified type pf data in the funcs parameters
+  - Funcs operating on interfaces should never accept a pointer to an interface but a value. Simply because we don't want to restrict the caller to just pointer
+    - Caller determine whether pointer or value(copy) is used
+  - When implememnting interface, it is recommended to use all pointer or all values, don't mix them
+  - Convention for creating interfaces in Go, the name as to be prefix with er
+
+### Creating & Implementing Interface
+
+
+```bash
+type MyInterface interface {
+  Function1()
+  Function2(x int) int
+}
+```
+Usage 1
+
+```bash
+type Mytype int
+
+func (m MyType) Function1(){}
+func (m MyType) Function2(x int) int {
+  return x + x
+}
+```
+
+Usage 2:
+
+```bash
+func execute(i MyInterface) {
+  i.Function1()
+}
+```
+
+### Pass By Value vs Pointer
+
+```bash
+type MyType int
+
+func execute(i MyInterface) {
+  i.Function1()
+}
+
+m := MyType(1)
+execute(m)
+execute(&m)
+```
+
+## Error Handling
+  - Go has no exceptions, not try or catch
+  - Errors are returned as the last return value from function
+    - Encodes failure as part of function signature, simply to determine if a function can fail
+  - Return nil if no error occurred
+  - Errors implement the error interface from std
+  - The errors standard lib can generate simple errors with the New() function
+  - Always implement error as a receiver function, it prevents comparison problems if error is inspected
+
+### Basic Error creation using New()
+
+```bash
+import "errors"
+
+func divide(lhs, rhs int)(int, error){
+  if rhs == 0 {
+    return 0, errors.New("cannot divide by zero")
+  } else {
+    return rhs/lhs, nil
+  }
+}
+```
+
+### Error Interface
+### Working with Errors
+1. Error.Is()
+  - to determine if error contains a specific type or check type
+2. Error.As()
+  - To retrieve a specific error

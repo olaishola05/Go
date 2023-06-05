@@ -179,3 +179,18 @@ Day 13 of #100DaysOfCode of learning Go programming.
     - Test if returned answer equal expected
 
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 14 of #100DaysOfCode of learning Go programming. 
+  - Learned
+    - Interface
+    - Creating & Implementing Interface
+    - Covention for creating interface in Go
+    - Passing Value or Pointer
+    - Creating & Implementing Interface
+    - Error Handling
+    - Basic Error creation using New()
+    - Error Interface
+    - Working with Errors
+
+#100DaysOfCode #100DaysOfGo #golang

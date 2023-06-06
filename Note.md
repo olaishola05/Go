@@ -1030,3 +1030,45 @@ func divide(lhs, rhs int)(int, error){
   - to determine if error contains a specific type or check type
 2. Error.As()
   - To retrieve a specific error
+
+
+
+## Readers & Writers
+
+ - Reader & writer are interfaces that allow reading from & writing to I/O sources
+  - Network sockets, files, arbitrary arrays
+ - Muliple Implementation in standard library
+ - Reader is a low-level implementation
+  - Usually want to work with bufio pkg instead of Reader directly
+
+### Interfaces
+
+1. Reader
+
+ - A reader interface has a Read func with a slices of byte and return n int of byte read and error.
+ - Each call to the Read() will fill the provided p buffer and the numbers of bytes read will be returned as n
+ - When all bytes have been read, err will be io.EOF
+
+```bash
+type Reader interface {
+  Read(p []byte) (n int, err error)
+}
+```
+
+```bash
+type Writer interface {
+  Write(p []byte) (n int, err error)
+}
+```
+
+### bufio Pkg
+
+  - Provides Reader & Writer buffering, no need to manually manage buffers or construct data
+
+#### bufio scanner
+  - It provides convenience functions for working with inputs
+2. Writer
+
+ - Writer is nearly symmetrical with Reader. It most of the things Reader does except it write to files
+
+ReadString create slice of strings and separated by runes indicated

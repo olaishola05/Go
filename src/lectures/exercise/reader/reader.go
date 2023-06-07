@@ -18,8 +18,55 @@
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"io"
+	"os"
+	"strings"
+)
+
+const (
+	hello = iota
+	bye
+)
+
+type Message string
+
+func messageResponder(msg string) string {
+	newMsg := Message(msg)
+	num := 0
+	switch num {
+	case hello:
+		return "Hi, Welcome to code lands"
+	case bye:
+		return "Thank you for stopping by."
+	}
+
+	return string(newMsg)
+}
 
 func main() {
+	reader := bufio.NewReader(os.Stdin)
+	lineCounter, commands := 0, 0
 
+	for {
+		command, commandErr := reader.ReadString(' ')
+		n := strings.TrimSpace(command)
+		message := messageResponder(n)
+		if n != "" {
+			lineCounter += 1
+			commands += 1
+			fmt.Println(message)
+		}
+
+		if commandErr == io.EOF {
+			break
+		}
+
+		if commandErr != nil {
+			fmt.Println("error reading Stdin:", commandErr)
+		}
+	}
+	fmt.Printf("total Stats: \nNumber non-blank lines: %v\nNumbers of commands entered: %v\n", lineCounter, commands)
 }

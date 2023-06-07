@@ -194,3 +194,22 @@ Day 14 of #100DaysOfCode of learning Go programming.
     - Working with Errors
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 15 of #100DaysOfCode of learning Go programming. 
+  - Learned
+    - Continued with Error handling & practice handling errors
+    - Readers & Writers
+    - Readers & Writers Interfaces
+    - bufio package & Scanner
+    - stringconv & Strings
+  Practice exercise with test and error handling with a program to parse time
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 16 of #100DaysOfCode of learning Go programming. 
+    - Continued with Readers & bufio
+    - Practice writing a simple command line code for summing up entered numbers
+  Working on another command line program to return msg based on commands and basic stats.
+
+#100DaysOfCode #100DaysOfGo #golang

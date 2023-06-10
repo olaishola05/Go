@@ -1072,3 +1072,23 @@ type Writer interface {
  - Writer is nearly symmetrical with Reader. It most of the things Reader does except it write to files
 
 ReadString create slice of strings and separated by runes indicated
+
+
+## Type Embedding
+  - Is a way to easily
+    - Provide existing functionality to a new type
+    - Require a type to implement multiple interfaces
+
+### Embedded Interfaces
+  - Allows you to embed an interface to another interface
+  - Implementing the interfaces requires all embedded funcs to be implemented
+  - Reduced the need to write duplicate interface declaration
+  - Changes in embedded interfaces automatically propagate
+    - Makes it easier to maintain code base
+
+### Embedded Structs
+  - Allows you to embed a struct into another structs
+  - The struct will have access to all receiver funcs and data of the embedded strcuts at top level
+    - This is called field & method promotion
+    - Allows easy access of embedded struct data without additional indirection
+    - Any receiver funcs sharing the same name as promoted method will override the promoted method.

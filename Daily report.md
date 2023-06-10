@@ -213,3 +213,17 @@ Day 16 of #100DaysOfCode of learning Go programming.
   Working on another command line program to return msg based on commands and basic stats.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 17 of #100DaysOfCode of learning Go programming. 
+    Learned
+    - Type Embedding
+    - Embedded Interfaces
+    - Embedded Structs
+    - Complete command line program using Readers to return msg based on commands and basic stats.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 18 of #100DaysOfCode of learning Go programming. 
+Not much learning today but manage to practice embedding with a demo program.
+
+#100DaysOfCode #100DaysOfGo #golang

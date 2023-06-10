@@ -1,72 +1,54 @@
-//--Summary:
-//  Create an interactive command line application that supports arbitrary
-//  commands. When the user enters a command, the program will respond
-//  with a message. The program should keep track of how many commands
-//  have been ran, and how many lines of text was entered by the user.
-//
-//--Requirements:
-//* When the user enters either "hello" or "bye", the program
-//  should respond with a message after pressing the enter key.
-//* Whenever the user types a "Q" or "q", the program should exit.
-//* Upon program exit, some usage statistics should be printed
-//  ('Q' and 'q' do not count towards these statistics):
-//  - The number of non-blank lines entered
-//  - The number of commands entered
-//
-//--Notes
-//* Use any Reader implementation from the stdlib to implement the program
-
 package main
 
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"os"
 	"strings"
 )
 
 const (
-	hello = iota
-	bye
+	hello = "hello"
+	bye   = "bye"
 )
 
-type Message string
+type Command string
 
-func messageResponder(msg string) string {
-	newMsg := Message(msg)
-	num := 0
-	switch num {
+func commandStats(cmdCounter, lineCounter int) {
+	fmt.Printf("The commands stats\n numbers of command: %v\n number of non-blank line: %v\n", cmdCounter, lineCounter)
+}
+
+func messageResponder(c *Command, cmdCounter int) int {
+	switch command := *c; command {
 	case hello:
-		return "Hi, Welcome to code lands"
+		fmt.Println("Command Response: Hi, Welcome to code lands, how can I help you?")
+		cmdCounter += 1
 	case bye:
-		return "Thank you for stopping by."
+		fmt.Println("Command Response: Thank you for stopping by.")
+		cmdCounter += 1
 	}
 
-	return string(newMsg)
+	return cmdCounter
 }
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	lineCounter, commands := 0, 0
+	reader := bufio.NewScanner(os.Stdin)
+	lineCounter := 0
+	commandCounter := 0
 
-	for {
-		command, commandErr := reader.ReadString(' ')
-		n := strings.TrimSpace(command)
-		message := messageResponder(n)
-		if n != "" {
-			lineCounter += 1
-			commands += 1
-			fmt.Println(message)
-		}
-
-		if commandErr == io.EOF {
+	for reader.Scan() {
+		if strings.ToUpper(reader.Text()) == "Q" {
 			break
-		}
+		} else {
+			command := Command(strings.ToLower(strings.TrimSpace(reader.Text())))
+			commandCounter = messageResponder(&command, commandCounter)
 
-		if commandErr != nil {
-			fmt.Println("error reading Stdin:", commandErr)
+			if command != "" {
+				lineCounter += 1
+			}
 		}
 	}
-	fmt.Printf("total Stats: \nNumber non-blank lines: %v\nNumbers of commands entered: %v\n", lineCounter, commands)
+
+	commandStats(commandCounter, lineCounter)
+
 }

@@ -227,3 +227,9 @@ Day 18 of #100DaysOfCode of learning Go programming.
 Not much learning today but manage to practice embedding with a demo program.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 19 of #100DaysOfCode of learning Go programming. 
+
+Practice embedding by building a simple system monitoring dashboard that display components average using struct embedding.
+
+#100DaysOfCode #100DaysOfGo #golang

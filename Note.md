@@ -1092,3 +1092,74 @@ ReadString create slice of strings and separated by runes indicated
     - This is called field & method promotion
     - Allows easy access of embedded struct data without additional indirection
     - Any receiver funcs sharing the same name as promoted method will override the promoted method.
+
+## Function Literals
+  - function literals provide a way to define a function within a function
+  - Possible to assign fun literals to variables
+  - They can be passed to function as parameters, results in more dynamic code
+  - Also known as closures or anonymous functions
+  - closure & annonymous functions are other terms for function literal
+
+### Anonymous function
+
+```bash
+
+func helloWorld(){
+  fmt.Printf("Hello, ")
+  world := func(){
+    fmt.printf("World!\n")
+  }
+
+  world()
+}
+```
+
+### Function Literals as function parameter
+
+```bash 
+func customMsg(fn func(m string), msg string){
+  msg := strings.ToUpper(msg)
+  fn(msg)
+}
+
+func surround() func(msg string){
+  return func(msg string) {
+    fmt.Printf("%.*s\n", len(msg), "--------")
+    fmt.Printf(msg)
+    fmt.Printf("%.*s\n", len(msg), "--------")
+  }
+}
+
+customMsg(surround(), "hello")
+```
+
+### Closure
+
+```bash
+
+discount := 0.1
+discountFn := func(subTotal float64) float64 {
+  if subTotal > 100.0 {
+    discount += 0.1
+  }
+
+  if discount > 0.3 {
+    discount = 0.3
+  }
+
+  return discount
+}
+```
+
+### Type Alias with function Literals
+
+  - You can type func lietrals to make the code more readable
+
+```bash
+type DiscountFunc func(subTotal float64) float64
+
+func calculatePrice(subTotal float64, discountFn DiscountFunc){
+  return subTotal - (subTotal * discount(subTotal))
+}
+
+```

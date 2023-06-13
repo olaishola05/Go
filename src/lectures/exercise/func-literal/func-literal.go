@@ -1,24 +1,18 @@
-//--Summary:
-//  Create a program that can create a report of rune information from
-//  lines of text.
-//
-//--Requirements:
-//* Create a single function to iterate over each line of text that is
-//  provided in main().
-//  - The function must return nothing and must execute a closure
-//* Using closures, determine the following information about the text and
-//  print a report to the terminal:
-//  - Number of letters
-//  - Number of digits
-//  - Number of spaces
-//  - Number of punctuation marks
-//
-//--Notes:
-//* The `unicode` stdlib package provides functionality for rune classification
-
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode"
+)
+
+type LineCallbackFn func(line string)
+
+func computeIterator(lines []string, callback LineCallbackFn) {
+	for _, value := range lines {
+		callback(value)
+	}
+
+}
 
 func main() {
 	lines := []string{
@@ -28,4 +22,33 @@ func main() {
 		"12 spaces,",
 		"and 4 punctuation marks in these lines of text!",
 	}
+
+	letters := 0
+	spaces := 0
+	digits := 0
+	punctuation := 0
+
+	counter := func(line string) {
+		for _, rune := range line {
+			if unicode.IsLetter(rune) {
+				letters += 1
+			}
+			if unicode.IsDigit(rune) {
+				digits += 1
+			}
+			if unicode.IsPunct(rune) {
+				punctuation += 1
+			}
+			if unicode.IsSpace(rune) {
+				spaces += 1
+			}
+		}
+	}
+
+	computeIterator(lines, counter)
+
+	fmt.Printf("Number of letters %v\n", letters)
+	fmt.Printf("Number of digits %v\n", digits)
+	fmt.Printf("Number of spaces %v\n", spaces)
+	fmt.Printf("Number of punctual marks %v\n", punctuation)
 }

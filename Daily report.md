@@ -233,3 +233,22 @@ Day 19 of #100DaysOfCode of learning Go programming.
 Practice embedding by building a simple system monitoring dashboard that display components average using struct embedding.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 20 of #100DaysOfCode of learning Go programming. 
+
+learned
+ - Function Literals
+ - Anonymous function & Closure
+ - Function Literals as function parameter
+ - Type Aliasing function Literals
+
+ Practice function literals with a basic math operations using all the concept learned.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 21 of #100DaysOfCode of learning Go programming. 
+
+ Practice function literals by creating a program that report rune information from lines of text using unicode stdlib package.
+
+#100DaysOfCode #100DaysOfGo #golang

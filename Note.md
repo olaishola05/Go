@@ -1163,3 +1163,28 @@ func calculatePrice(subTotal float64, discountFn DiscountFunc){
 }
 
 ```
+
+## Defer
+  - Useful to run operations after functions complete
+  - The defer keyword can be used to execute after a function runs
+    - Clean up resources, reset data, etc.
+    - For executing some code after the function finishes
+
+  
+## Concurrency
+  - By default code executes line-by-line, one line at a time
+  - Concurrency allows multiple lines to be executed
+  - There are two types of concurrent code:
+    - Threaded: code runs in parallel based on number of CPU cores available
+    - Asynchronous: code can pause and resume execution
+      - While paused, other code can resume
+  - Go will automatically choose the appropriate concurrency method
+  - concurrent code runs on non-deterministic which means everytime the code is run you get output out of order
+    - Synchronization or other techniques are required to ensure proper program behaviour
+
+## Goroutines
+  - Goroutines allow functions to run concurrently
+    - Can also be use to run function literals / closures
+
+  - Go will automatically select either parallel or asynchronous
+  - New goroutines can be created using the go keyword

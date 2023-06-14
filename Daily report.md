@@ -252,3 +252,13 @@ Day 21 of #100DaysOfCode of learning Go programming.
  Practice function literals by creating a program that report rune information from lines of text using unicode stdlib package.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 22 of #100DaysOfCode of learning Go programming. 
+  learned:
+  - Defer keyword and its functionality
+  - Concurrency: Threaded & Asynchronous
+  - Goroutines
+
+  A demo program to capitalize rune using goroutines to run the capitalization on a separate thread.
+
+#100DaysOfCode #100DaysOfGo #golang

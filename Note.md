@@ -1188,3 +1188,68 @@ func calculatePrice(subTotal float64, discountFn DiscountFunc){
 
   - Go will automatically select either parallel or asynchronous
   - New goroutines can be created using the go keyword
+
+## Channels
+  - Channels offer one-way communication
+    - Conceptually the same as two-ended pipe
+      - Write/send data in one end and read/receive data out the other end
+      - Also called send & receive
+
+  - Utilizing channels enables goroutines to communicate:
+    - Can send/receive messages or computational results
+  - Channel ends can be duplicated across goroutines
+  - When working with channels, the message go in one at a time and comes out one at a time
+  - It is possible to duplicate reader or receivers end and you can send the end to goroutines.
+  - You can have one goroutine sending data and multiple goroutines reading at the other ends
+  - To put info to the channel the arrow point to the channel and to get data out of the channel the arrow point out of the channel
+
+### Creating Channel & Usage
+
+```bash
+channel := make(chan int)
+
+# Send to channel
+
+go func() { channel <- 1}()
+go func() { channel <- 2}()
+go func() { channel <- 3}()
+
+# Receive from channel
+
+first := <-channel
+second := <- channel
+theird := <- channel
+
+fmt.Println(first, second, third)
+```
+
+### Details
+
+Channels can be buffered or unbuffered
+  - Unbuffered channels will block when sending until a reader is available
+  - Buffered channels have a specified capacity
+    - Can send messages up to the capacity, even w/o a reader
+  Messages on a channel are FIFO ordering
+
+### Channel Selection
+  - The select keyword lets you work with multiple potential blocking channels
+  - Send/receive attempts are made, regardless of blocking status
+  - It is like switch but instead of using the keyword switch we use select
+  - It is important to sleep before trying again to avoid infinite loop that uses cpu to 100% usage
+
+```bash
+one := make(chan int)
+two := make(chan int)
+
+for {
+  select {
+    case o := <-one:
+      fmt.Println("One:", o)
+    case t := <-two:
+      fmt.Println("Two:", t)
+    default:
+      fmt.Println("No data to receive")
+      time.Sleep(50 * time.Millisecond)
+  }
+}
+```

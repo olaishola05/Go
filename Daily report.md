@@ -262,3 +262,19 @@ Day 22 of #100DaysOfCode of learning Go programming.
   A demo program to capitalize rune using goroutines to run the capitalization on a separate thread.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 23 of #100DaysOfCode of learning Go programming. 
+Today, I don't do much learning due to other commitment but managed to practice goroutines with a program to read multiple files and return there sum.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 24 of #100DaysOfCode of learning Go programming. 
+
+Learned 
+- Channels, Creating Channel & Usage
+- Buffered & Unbuffered channels
+- Channel Selection
+
+Might need to go over channels again, the concepts has'nt fully sinked yet.
+
+#100DaysOfCode #100DaysOfGo #golang

@@ -1253,3 +1253,32 @@ for {
   }
 }
 ```
+
+## Synchronization
+
+ - Managing data across multiple goroutines can become problematic and hard to debug
+  - Multiple goroutines can change the same data leading to unpredictable results
+  - Using channels to communicate is not always ideal
+
+ - Synchronization solves this issues and enables:
+  - Waiting for goroutines to finish
+  - Prevents multiple goroutines from modifying data simultaneoussly
+
+### Mutex
+ - A mutex is short for mutual exclusion
+ - It provides a way to lock and unlock data
+  - Locked data cannot be accessed by any other goroutine until it is unlocked
+  - While locked, all other goroutines are blocked until thhe mutex is unlocked
+    - Execution waits until lock is available or if select is used it will skip and try again later
+
+- Helps reduce bugs when working with multiple goroutines
+
+### Deferred Unlock
+- Defer can be used to ensure the mutex gets unlocked
+
+### Wait Groups
+
+ - Wait groups enable an application to wait for goroutines to finish
+ - Works by incrementing a counter whenever a groutine is added, and decrementing when it finishes
+  - Waiting on the group will block execution until counter is 0
+  - wg.Add(), wg.Done() and wg.wait() pauses the execution

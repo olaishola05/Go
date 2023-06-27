@@ -285,3 +285,17 @@ Day 25 of #100DaysOfCode of learning Go programming.
 Glad to be back, was challenged health wise last week and I had to paused to take care of my self. Today I went over channels again and did two code along challenges on channels. Baby steps.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 26 of #100DaysOfCode of learning Go programming.
+
+Learned
+  - Synchronization
+  - Mutex
+    - Lock & Unlock
+    - Deferred Unlock
+  - Wait Groups
+    - wg.Add(), wg.Done() and wg.wait()
+
+Practice with a simple program to loop over a number and using waitgroup to wait for a groutine to finish.
+
+#100DaysOfCode #100DaysOfGo #golang

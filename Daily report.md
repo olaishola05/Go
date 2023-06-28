@@ -299,3 +299,10 @@ Learned
 Practice with a simple program to loop over a number and using waitgroup to wait for a groutine to finish.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 27 of #100DaysOfCode of learning Go programming.
+
+Practice mutex with wait group by writing a small hit counter program.
+
+#100DaysOfCode #100DaysOfGo #golang

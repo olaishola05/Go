@@ -1,11 +1,11 @@
-Day 0 of #100DaysOfCode of learning Go programming. 
+Day 0 of #100DaysOfCode of learning Go programming.
   - Learned the importance of Go.
   - Installed Go and its dependencies.
   - Set up vscode, create a profile for Go, and installed Go extension.
   - Learned about packages and modules in Go.
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 1 of #100DaysOfCode of learning Go programming. 
+Day 1 of #100DaysOfCode of learning Go programming.
   - Learned data types in Go.
     - Primitives Data Types
     - String & Runes etc.
@@ -21,9 +21,9 @@ Day 1 of #100DaysOfCode of learning Go programming.
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 2 of of #100DaysOfCode of learning Go programming. 
+Day 2 of of #100DaysOfCode of learning Go programming.
 
-  Learned 
+  Learned
     - Function in Go
       - Creating functions with & without parameter
       - Calling of functions with arguments
@@ -39,13 +39,13 @@ Day 2 of of #100DaysOfCode of learning Go programming.
   - If/Else Statement & Flow control
     - Logical Operators with if statement
     - Statement Initialization
-    
+
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 3 of #100DaysOfCode of learning Go programming. 
+Day 3 of #100DaysOfCode of learning Go programming.
 
-  Learned 
+  Learned
     - Switch statement in Go
       - Conditional Cases
       - Case List
@@ -58,13 +58,13 @@ Day 3 of #100DaysOfCode of learning Go programming.
       - break and continue keyword
 
 Created a simple age classification program using both for loop and switch statement
-    
+
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 4 of #100DaysOfCode of learning Go programming. 
+Day 4 of #100DaysOfCode of learning Go programming.
 
-  Learned 
+  Learned
     - Structures in Go
       - Instantiating a Structure
       - Structure Default Values
@@ -73,20 +73,20 @@ Day 4 of #100DaysOfCode of learning Go programming.
 
     - Arrays
       - Creating an Array
-      - Uninitialized Array 
+      - Uninitialized Array
       - Create & Assign an array
       - Accessing and Modifying an array using bracket notation
       - Array Iteration with loop
       - Array Bounds
 
 Today I focused more on practicing previously learned concept and created a basic program to log shopping list stats.
-    
+
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 5 of #100DaysOfCode of learning Go programming. 
+Day 5 of #100DaysOfCode of learning Go programming.
 
-  Learned 
+  Learned
     - Slices in Go
       - Creating a Slice
       - Slice Syntax
@@ -101,31 +101,31 @@ Day 5 of #100DaysOfCode of learning Go programming.
       - Map Iteration
 
 Working on a basic map with slices program, but the code is not working yet, Hopefully tomorrow I'll share. Below is a demo to a basic slice program.
-    
+
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 6 of #100DaysOfCode of learning Go programming. 
+Day 6 of #100DaysOfCode of learning Go programming.
 
 Don't do much learning today but complete a simple program I was working on yesterday to print server status using map and slices.
-    
+
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 7 of #100DaysOfCode of learning Go programming. 
+Day 7 of #100DaysOfCode of learning Go programming.
  I had a very low start today and other commitments but manage to squeeze in few minutes.
 
  Learned
  - Pointers
  - Creating Pointers
  - Few practice tackling challenge with pointers. I must confess, I still need another look at pointer to fully understand it.
- 
+
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 8 of #100DaysOfCode of learning Go programming. 
+Day 8 of #100DaysOfCode of learning Go programming.
  Don't do any much learning today but practice all the concept learnt in a mini Library management program challenge. The program uses type aliases, Map, struct, pointers etc. Got stuck along the way but had to follow along to complete the program. Learnt alot with this challenge.
- 
+
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 9 of #100DaysOfCode of learning Go programming. 
+Day 9 of #100DaysOfCode of learning Go programming.
  Learned and practiced
  - Receiver Functions
   -func receiver pointer
@@ -134,11 +134,11 @@ Day 9 of #100DaysOfCode of learning Go programming.
   - Long-from
   - Short-form
 - iota Enumeration & pattern
- 
+
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 10 of #100DaysOfCode of learning Go programming. 
+Day 10 of #100DaysOfCode of learning Go programming.
  Learned
  - Varadics
  - Text Formating: FMT
@@ -152,7 +152,7 @@ Day 10 of #100DaysOfCode of learning Go programming.
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 11 of #100DaysOfCode of learning Go programming. 
+Day 11 of #100DaysOfCode of learning Go programming.
  Learned
  - Init Function
  - Basic testing in Go
@@ -163,7 +163,7 @@ Day 11 of #100DaysOfCode of learning Go programming.
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 12 of #100DaysOfCode of learning Go programming. 
+Day 12 of #100DaysOfCode of learning Go programming.
  Learned
   - Continued with unit testing in Go
   Write unit tests for previously created receiver funtions for player stats to make sure
@@ -172,7 +172,7 @@ Day 12 of #100DaysOfCode of learning Go programming.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 13 of #100DaysOfCode of learning Go programming. 
+Day 13 of #100DaysOfCode of learning Go programming.
   - Continued with unit testing in Go
   Write unit test for previously created basic calculator program to test
     - arithmetic operations on all mathematical operations
@@ -181,7 +181,7 @@ Day 13 of #100DaysOfCode of learning Go programming.
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 14 of #100DaysOfCode of learning Go programming. 
+Day 14 of #100DaysOfCode of learning Go programming.
   - Learned
     - Interface
     - Creating & Implementing Interface
@@ -195,7 +195,7 @@ Day 14 of #100DaysOfCode of learning Go programming.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 15 of #100DaysOfCode of learning Go programming. 
+Day 15 of #100DaysOfCode of learning Go programming.
   - Learned
     - Continued with Error handling & practice handling errors
     - Readers & Writers
@@ -207,14 +207,14 @@ Day 15 of #100DaysOfCode of learning Go programming.
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 16 of #100DaysOfCode of learning Go programming. 
+Day 16 of #100DaysOfCode of learning Go programming.
     - Continued with Readers & bufio
     - Practice writing a simple command line code for summing up entered numbers
   Working on another command line program to return msg based on commands and basic stats.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 17 of #100DaysOfCode of learning Go programming. 
+Day 17 of #100DaysOfCode of learning Go programming.
     Learned
     - Type Embedding
     - Embedded Interfaces
@@ -223,18 +223,18 @@ Day 17 of #100DaysOfCode of learning Go programming.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 18 of #100DaysOfCode of learning Go programming. 
+Day 18 of #100DaysOfCode of learning Go programming.
 Not much learning today but manage to practice embedding with a demo program.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 19 of #100DaysOfCode of learning Go programming. 
+Day 19 of #100DaysOfCode of learning Go programming.
 
 Practice embedding by building a simple system monitoring dashboard that display components average using struct embedding.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 20 of #100DaysOfCode of learning Go programming. 
+Day 20 of #100DaysOfCode of learning Go programming.
 
 learned
  - Function Literals
@@ -247,13 +247,13 @@ learned
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 21 of #100DaysOfCode of learning Go programming. 
+Day 21 of #100DaysOfCode of learning Go programming.
 
  Practice function literals by creating a program that report rune information from lines of text using unicode stdlib package.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 22 of #100DaysOfCode of learning Go programming. 
+Day 22 of #100DaysOfCode of learning Go programming.
   learned:
   - Defer keyword and its functionality
   - Concurrency: Threaded & Asynchronous
@@ -263,14 +263,14 @@ Day 22 of #100DaysOfCode of learning Go programming.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 23 of #100DaysOfCode of learning Go programming. 
+Day 23 of #100DaysOfCode of learning Go programming.
 Today, I don't do much learning due to other commitment but managed to practice goroutines with a program to read multiple files and return there sum.
 
 #100DaysOfCode #100DaysOfGo #golang
 
-Day 24 of #100DaysOfCode of learning Go programming. 
+Day 24 of #100DaysOfCode of learning Go programming.
 
-Learned 
+Learned
 - Channels, Creating Channel & Usage
 - Buffered & Unbuffered channels
 - Channel Selection
@@ -304,5 +304,26 @@ Practice with a simple program to loop over a number and using waitgroup to wait
 Day 27 of #100DaysOfCode of learning Go programming.
 
 Practice mutex with wait group by writing a small hit counter program.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 28 of #100DaysOfCode of learning Go programming.
+
+Today, I created a console program for event ticket management that display total & avail tickets. The program is not complete yet
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 29 of #100DaysOfCode of learning Go programming.
+
+Today, I continued with the console event ticket manager, create an infinite loop to receive input from user until the total ticket remainder == 0, added user input validation and some other functionalities
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 29 of #100DaysOfCode of learning Go programming.
+
+Today, I continued with the console event ticket manager, worked on refactoring & cleaning the code by breaking the code into callable functions to make the code cleaner.
 
 #100DaysOfCode #100DaysOfGo #golang

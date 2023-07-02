@@ -322,8 +322,14 @@ Today, I continued with the console event ticket manager, create an infinite loo
 #100DaysOfCode #100DaysOfGo #golang
 
 
-Day 29 of #100DaysOfCode of learning Go programming.
+Day 30 of #100DaysOfCode of learning Go programming.
 
-Today, I continued with the console event ticket manager, worked on refactoring & cleaning the code by breaking the code into callable functions to make the code cleaner.
+Today, I continued with the console event ticket manager program, worked on refactoring & cleaning the code by breaking the code into callable functions to make the code cleaner.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 31 of #100DaysOfCode of learning Go programming.
+
+I decided to take a rest today from learning and comeback strong tomorrow.
 
 #100DaysOfCode #100DaysOfGo #golang

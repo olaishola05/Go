@@ -333,3 +333,17 @@ Day 31 of #100DaysOfCode of learning Go programming.
 I decided to take a rest today from learning and comeback strong tomorrow.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 32 of #100DaysOfCode of learning Go programming.
+
+Continued with refactoring the console event ticket manager, by moving some of the shared variables to package level for more accessiblility and solve the need of passing them as function paramters.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 33 of #100DaysOfCode of learning Go programming.
+
+Today, I moved some of the functions to global package level file and imported them where necessary and in other to cleaned up the main function. Also create struct to organized user information.
+
+#100DaysOfCode #100DaysOfGo #golang

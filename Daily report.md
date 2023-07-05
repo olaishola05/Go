@@ -347,3 +347,9 @@ Day 33 of #100DaysOfCode of learning Go programming.
 Today, I moved some of the functions to global package level file and imported them where necessary and in other to cleaned up the main function. Also create struct to organized user information.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 34 of #100DaysOfCode of learning Go programming.
+
+Today, I created simulated function to send user booking info after the booking is created and use goroutine & waitGroup to wait until the booking info is sent before exiting.
+
+#100DaysOfCode #100DaysOfGo #golang

@@ -353,3 +353,10 @@ Day 34 of #100DaysOfCode of learning Go programming.
 Today, I created simulated function to send user booking info after the booking is created and use goroutine & waitGroup to wait until the booking info is sent before exiting.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 35 of #100DaysOfCode of learning Go programming.
+
+Today, I started to create a console quiz game that read questions from a csv file, prompt user for answer, create a struct to organised the question and answer. The game is still a work in progress and not fully
+ working yet.
+#100DaysOfCode #100DaysOfGo #golang

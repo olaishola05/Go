@@ -359,4 +359,17 @@ Day 35 of #100DaysOfCode of learning Go programming.
 
 Today, I started to create a console quiz game that read questions from a csv file, prompt user for answer, create a struct to organised the question and answer. The game is still a work in progress and not fully
  working yet.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 36 of #100DaysOfCode of learning Go programming.
+
+Had a slow start, was a bit feeling stressed but continued working on the quiz app, create a function to check user answer against the one set in the csv file.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 36 of #100DaysOfCode of learning Go programming.
+
+Today, I refactored the quiz main function and create a function to loop over the a question and a counter. Used the counter value to exit the infinite for loop.
+
 #100DaysOfCode #100DaysOfGo #golang

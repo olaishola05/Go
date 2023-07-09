@@ -373,3 +373,9 @@ Day 36 of #100DaysOfCode of learning Go programming.
 Today, I refactored the quiz main function and create a function to loop over the a question and a counter. Used the counter value to exit the infinite for loop.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 37 of #100DaysOfCode of learning Go programming.
+
+Today, I decided to take a rest because I was feeling a little stressed. Hopefully comeback strong tomorrow.
+
+#100DaysOfCode #100DaysOfGo #golang

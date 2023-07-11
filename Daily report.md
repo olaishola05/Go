@@ -379,3 +379,16 @@ Day 37 of #100DaysOfCode of learning Go programming.
 Today, I decided to take a rest because I was feeling a little stressed. Hopefully comeback strong tomorrow.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 38 of #100DaysOfCode of learning Go programming.
+
+Today, i continued with the quiz game, fix error with verifying user answer, trim user input and saved answers whitespaces and add gorountine and wait group to wait for the questions to finish before printing the final quiz result.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 39 of #100DaysOfCode of learning Go programming.
+
+Today, I continued with the quiz game, create a function to exit the game if user input "exit" or "quit" and if input is a special character. Used random to generate random question from questions array.
+
+#100DaysOfCode #100DaysOfGo #golang

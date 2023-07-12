@@ -389,6 +389,12 @@ Today, i continued with the quiz game, fix error with verifying user answer, tri
 
 Day 39 of #100DaysOfCode of learning Go programming.
 
-Today, I continued with the quiz game, create a function to exit the game if user input "exit" or "quit" and if input is a special character. Used random to generate random question from questions array.
+Today, I continued with the quiz game, create a function to exit the game if user input "exit" or "quit" and if input is a special character. Used rand package to generate random question from questions array and a function to print quiz stats.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 40 of #100DaysOfCode of learning Go programming.
+
+Today, I created a channel to check the signal if user press CTRL + C, add timer to the quiz and use goroutine to receive the timer and exit the timer once the time is up. Refactor repeated code such as printing final score upon user actions.
 
 #100DaysOfCode #100DaysOfGo #golang

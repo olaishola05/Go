@@ -398,3 +398,15 @@ Day 40 of #100DaysOfCode of learning Go programming.
 Today, I created a channel to check the signal if user press CTRL + C, add timer to the quiz and use goroutine to receive the timer and exit the timer once the time is up. Refactor repeated code such as printing final score upon user actions.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 41/42 of #100DaysOfCode of learning Go programming.
+
+For the past two days i have been busy due to other committments, but I managed to refactored the quiz game program, set the quiz time to 2mins and delay the start time for 10 sec. Update the game instruction.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+Day 43 of #100DaysOfCode of learning Go programming.
+
+Not much learning today, but managed to complete the quiz game, clean up the code by moving some functions to package level for resuable purpose.
+
+#100DaysOfCode #100DaysOfGo #golang

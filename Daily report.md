@@ -410,3 +410,8 @@ Day 43 of #100DaysOfCode of learning Go programming.
 Not much learning today, but managed to complete the quiz game, clean up the code by moving some functions to package level for resuable purpose.
 
 #100DaysOfCode #100DaysOfGo #golang
+
+Day 44 of #100DaysOfCode of learning Go programming.
+
+Took today off to rest and recharged. Tomorrow I'll starting another project, a URL Shortner. Wish me luck.
+#100DaysOfCode #100DaysOfGo #golang

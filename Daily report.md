@@ -415,3 +415,17 @@ Day 44 of #100DaysOfCode of learning Go programming.
 
 Took today off to rest and recharged. Tomorrow I'll starting another project, a URL Shortner. Wish me luck.
 #100DaysOfCode #100DaysOfGo #golang
+
+
+Day 45 of #100DaysOfCode of learning Go programming.
+
+Today, I started a new project an http handler that will look at the path of any incoming web request and determine if it should redirect the user to a new page, much like URL shortener would.
+
+#100DaysOfCode #100DaysOfGo #golang
+
+
+Day 45/47 of #100DaysOfCode of learning Go programming.
+
+For the past two days I have not been able to work on the new Go project, got entrusted with more responsibilites and some have some deadlines approaching.
+
+#100DaysOfCode #100DaysOfGo #golang
